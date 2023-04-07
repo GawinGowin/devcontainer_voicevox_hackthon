@@ -1,0 +1,20 @@
+{
+    "name": "Node js React",
+    "dockerComposeFile": ["./docker-compose.yml"],
+    "service": "react",
+    "workspaceFolder": "/home",
+
+    "customizations": {
+      // Configure properties specific to VS Code.
+      "vscode": {
+        // Add the IDs of extensions you want installed when the container is created.
+        "extensions": [
+          "dsznajder.es7-react-js-snippets",
+          "planbcoding.vscode-react-refactor",
+          "esbenp.prettier-vscode",
+          "dbaeumer.vscode-eslint",
+          "ms-python.python"
+        ]
+      }
+    }
+}

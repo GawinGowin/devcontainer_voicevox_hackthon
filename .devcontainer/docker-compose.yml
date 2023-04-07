@@ -1,0 +1,33 @@
+version: '3.8'
+name: HackthonWorkContainer
+services:
+  react:
+    container_name: lang-container
+    build: 
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:3000:3000
+    volumes:
+      - .:/workspace:cached
+      - home:/home
+    depends_on:
+      - vovoicevox
+    networks:
+      - hacktho-network
+
+  vovoicevox:
+    image: voicevox/voicevox_engine:cpu-ubuntu20.04-latest
+    container_name: voicevox-container
+    ports:
+      - 127.0.0.1:50021:50021
+    volumes: 
+      - vovoicevox-volumes:/vovoicevox-volumes
+    networks:
+      - hacktho-network
+
+volumes:
+  home:
+  vovoicevox-volumes:
+
+networks:
+  hacktho-network:

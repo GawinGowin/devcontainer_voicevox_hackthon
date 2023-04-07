@@ -13,7 +13,7 @@ services:
     depends_on:
       - voicevox
     networks:
-      - hacktho-network
+      - hackthon-network
 
   voicevox:
     image: voicevox/voicevox_engine:cpu-ubuntu20.04-latest
@@ -23,11 +23,11 @@ services:
     volumes: 
       - voicevox-volumes:/voicevox-volumes
     networks:
-      - hacktho-network
+      - hackthon-network
 
 volumes:
   home:
   voicevox-volumes:
 
 networks:
-  hacktho-network:
+  hackthon-network:

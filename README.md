@@ -11,6 +11,7 @@ $ git clone https://github.com/GawinGowin/devcontainer_voicevox_hackthon
 
 ## 3. Build Dev Containers
 ・Click the `Reopen in Container`
+
 ![screen](readme_img\button.png)
 
 OR

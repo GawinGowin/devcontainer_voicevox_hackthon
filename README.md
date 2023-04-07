@@ -6,13 +6,13 @@ $ git clone https://github.com/GawinGowin/devcontainer_voicevox_hackthon
 ~~~
 
 ## 2. Open this Repo with VScode
-![screen](readme_img\screenshot.png)
+![screen](/readme_img/screenshot.png)
 
 
 ## 3. Build Dev Containers
 ・Click the `Reopen in Container`
 
-![screen](readme_img\button.png)
+![screen](/readme_img/button.png)
 
 OR
 

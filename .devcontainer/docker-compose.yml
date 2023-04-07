@@ -1,5 +1,5 @@
 version: '3.8'
-name: HackthonWorkContainer
+name: HackathonWorkContainer
 services:
   react:
     container_name: lang-container
@@ -13,7 +13,7 @@ services:
     depends_on:
       - voicevox
     networks:
-      - hackthon-network
+      - hackathon-network
 
   voicevox:
     image: voicevox/voicevox_engine:cpu-ubuntu20.04-latest
@@ -23,11 +23,11 @@ services:
     volumes: 
       - voicevox-volumes:/voicevox-volumes
     networks:
-      - hackthon-network
+      - hackathon-network
 
 volumes:
   home:
   voicevox-volumes:
 
 networks:
-  hackthon-network:
+  hackathon-network:

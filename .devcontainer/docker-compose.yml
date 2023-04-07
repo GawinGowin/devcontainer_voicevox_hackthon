@@ -11,23 +11,23 @@ services:
       - .:/workspace:cached
       - home:/home
     depends_on:
-      - vovoicevox
+      - voicevox
     networks:
       - hacktho-network
 
-  vovoicevox:
+  voicevox:
     image: voicevox/voicevox_engine:cpu-ubuntu20.04-latest
     container_name: voicevox-container
     ports:
       - 127.0.0.1:50021:50021
     volumes: 
-      - vovoicevox-volumes:/vovoicevox-volumes
+      - voicevox-volumes:/voicevox-volumes
     networks:
       - hacktho-network
 
 volumes:
   home:
-  vovoicevox-volumes:
+  voicevox-volumes:
 
 networks:
   hacktho-network:

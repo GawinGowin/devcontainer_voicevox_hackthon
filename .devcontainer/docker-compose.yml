@@ -1,5 +1,5 @@
 version: '3.8'
-name: HackathonWorkContainer
+name: hackathon-work-container
 services:
   react:
     container_name: lang-container

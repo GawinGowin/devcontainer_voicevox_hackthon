@@ -1,5 +1,5 @@
 {
-    "name": "Node js React",
+    "name": "node-js-react",
     "dockerComposeFile": ["./docker-compose.yml"],
     "service": "react",
     "workspaceFolder": "/home",
@@ -15,7 +15,6 @@
           "dbaeumer.vscode-eslint",
           "ms-python.python",
           "GitHub.vscode-pull-request-github"
-            
         ]
       }
     }

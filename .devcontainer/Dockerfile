@@ -8,7 +8,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
 RUN git clone https://github.com/yusei53/voicevox_hackthon
 
 RUN apt-get install -y --no-install-recommends \
-    python3 python3-pip
+    python3 python3-pip python3-dev libasound2-dev
 
 #RUN apt-get install -y --no-install-recommends \
 #    libglib2.0-0 libsm6 libxrender1 libxext6 libgl1-mesa-dev libcurl4-openssl-dev

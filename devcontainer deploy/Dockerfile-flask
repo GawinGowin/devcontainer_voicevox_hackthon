@@ -18,4 +18,6 @@ RUN rm ./requirements.txt
 
 WORKDIR /home/voicevox_hackthon/voicevox_chat_backend/
 
-CMD ["python", "app.py"]
+COPY ./.env ./
+
+CMD ["python", "api.py"]

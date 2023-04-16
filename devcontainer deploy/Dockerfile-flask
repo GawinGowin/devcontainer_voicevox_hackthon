@@ -16,6 +16,6 @@ RUN pip3 install --no-cache-dir install --upgrade pip
 RUN pip3 --disable-pip-version-check --no-cache-dir install --user -r ./requirements.txt
 RUN rm ./requirements.txt
 
-WORKDIR /home/voicevox_hackthon/voicevox_chat_backend
+WORKDIR /home/voicevox_hackthon/voicevox_chat_backend/
 
 CMD ["python", "app.py"]

@@ -4,6 +4,7 @@ WORKDIR /home
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends git
 RUN git clone https://github.com/yusei53/voicevox_hackthon
+WORKDIR /home/voicevox_hackthon/
 RUN git pull
 
 WORKDIR /home/voicevox_hackthon/voicevox-chat-front/

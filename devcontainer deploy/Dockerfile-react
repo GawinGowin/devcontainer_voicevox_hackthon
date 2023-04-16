@@ -10,4 +10,6 @@ RUN git pull
 WORKDIR /home/voicevox_hackthon/voicevox-chat-front/
 RUN npm install
 RUN npm install -g serve
+RUN npm install http-proxy-middleware --save-dev
+EXPOSE 3000
 CMD ["npm", "start"]

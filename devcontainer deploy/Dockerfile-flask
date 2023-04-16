@@ -22,4 +22,5 @@ WORKDIR /home/voicevox_hackthon/voicevox_chat_backend/
 
 COPY ./.env ./
 
+EXPOSE 5000
 CMD ["python", "api.py"]

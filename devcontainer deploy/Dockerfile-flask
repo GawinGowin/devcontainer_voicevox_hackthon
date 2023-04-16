@@ -4,6 +4,7 @@ WORKDIR /home
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends git
 RUN git clone https://github.com/yusei53/voicevox_hackthon
+RUN git pull
 
 RUN apt-get install -y --no-install-recommends \
     python3 python3-pip python3-dev libasound2-dev

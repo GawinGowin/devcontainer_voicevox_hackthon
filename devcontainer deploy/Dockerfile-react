@@ -7,7 +7,6 @@ RUN npm install -g serve
 RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends git
 RUN git clone https://github.com/yusei53/voicevox_hackthon
 
-RUN cd /home/voicevox_hackthon/voicevox-chat-front
-RUN npm i
-
-ENTRYPOINT npm start
+WORKDIR /home/voicevox_hackthon/voicevox-chat-front
+RUN RUN npm install
+CMD ["npm", "start"]
